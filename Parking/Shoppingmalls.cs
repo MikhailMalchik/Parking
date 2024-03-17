@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Parking
 {
@@ -22,11 +23,12 @@ namespace Parking
     }
     public class ParkingPlace
     {
-        public int Capacity { get; set; }
+        public int[] parkingNumber { get; set; }
+
         public ParkingPlace(int capacity )
-    {
-        Capacity = capacity;
-    }
+        {
+            parkingNumber =  new int[capacity];
+        }
     }
 
 

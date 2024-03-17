@@ -23,8 +23,7 @@ namespace Parking
         {
             if(CarsNumbers.Any(x=>x.Number== number))
             {
-                Console.WriteLine("Такой номер автомобиля уже существует");
-                return;
+                throw new Exception("Такой номер автомобиля уже существует");
             }
             CarsNumbers.Add(new CarsNumbers(number));
 
