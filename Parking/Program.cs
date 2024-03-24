@@ -7,7 +7,7 @@ static void Main(string[] args)
     driver.AddCar("AE1101");
     Mall mall = new("Галерея");
     mall.AddParkingPlace(24);
-    Park park = new(mall, driver, "AE1101");
+    Park park = new(mall, driver, "AE11011");
     Console.WriteLine(park.ParkPlace); 
 
     Console.ReadLine();

@@ -23,11 +23,15 @@ namespace Parking
     }
     public class ParkingPlace
     {
-        public int[] parkingNumber { get; set; }
+        public Dictionary<int, string> parkingNumber;
 
         public ParkingPlace(int capacity )
         {
-            parkingNumber =  new int[capacity];
+            parkingNumber = new Dictionary<int, string>();
+            for (int j = 0; j < capacity; j++)
+            {
+                parkingNumber.Add(j, "Свободно");
+            }
         }
     }
 

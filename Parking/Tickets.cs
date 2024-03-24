@@ -20,7 +20,7 @@ namespace Parking
             ParkingPlace = parknumber;
             if (Driver.CarsNumbers.Exists(x=>x.Number==carNumber)) 
             { CarNumber = carNumber;
-                Console.WriteLine( "Вы припарковались",ParkingPlace);
+   
             }
             else { throw new Exception("Такого номера автомобиля не существует у данного водителя"); }
         }
